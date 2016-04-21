@@ -2,7 +2,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-header, footer {
+ footer {
     background-color: #333;
     color: #ddd;
     padding: 20px;
@@ -21,7 +21,7 @@ aside {
 }
 .range-list h4 {
     margin-bottom: 40px;
-    color: darkorange;
+    color: #ff8c00;
     font-weight: bold;
 }
 .range-list img {
@@ -31,7 +31,7 @@ aside {
     max-height: 60px;
 }
 .range-title {
-    color: darkblue;
+    color: #000085;
 }
 
 .sports-icon-list {
@@ -39,7 +39,7 @@ aside {
     padding-bottom: 40px;
 }
 .sports-icon-list a {
-    color: white;
+    color: #ffffff;
 }
 .sports-icon-list a h6 {
     margin-top: 2px;
@@ -76,7 +76,11 @@ article p {
     font-size: 16px;
 }
 
-/*@media (max-width: 767px) {
+@media (max-width: 767px) {
+    
+    .range-list h4 {
+        display: inline;
+    }
 
     .range-list a {
         display: block;
@@ -88,7 +92,5 @@ article p {
         margin-bottom: 30px;
     }
 
-    .range-list h4 {
-        display: inline;
-    }
-}*/
+   
+}
