@@ -4,14 +4,15 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="content/font-awesome.min.css"" rel='stylesheet' >
     <link href="content/bootstrap.min.css" rel="stylesheet" />
     <link href="content/app.css" rel="stylesheet" />
-    <link href="content/jquery.fs.wallpaper.css" rel="stylesheet" />
+   
     
     
 </head>
 <body>
-    <header>
+    <header id="top">
         <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" 
              role="navigation">
             <div class="container-fluid">
@@ -25,13 +26,14 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="#top">
-                        <img src="images/site-logo-white.png" />
+                        <img src="images/site-logo-white-70pct.png" />
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#top">Home</a></li>
                         <li><a href="#sights">Sights</a></li>
                         <li><a href="#sports">Sports</a></li>
                         <li><a href="#activities">Activities</a></li>
@@ -45,15 +47,23 @@
 
     <div class="container-fluid">
         <section class="row">
-            <div class="fill-screen" style="background-image: url(images/lake.jpg)">
+            <div class="fill-screen stellar-bg" style="background-image: url(images/lake-dark.jpg)"
+            data-stellar-background-ratio="0.2">
+             <img class="img-responsive title-image" src="images/site-logo-white.png" alt="Rocky Mountain Out Logo"/>
+             <div class="down-button">
+                 <a class="btn" href="#sights">
+                     <i class="fa fa-arrow-circle-down fa-4x"></i>
+                 </a>
+                 
+             </div>
             </div>
         </section>
-        <section class="row text-banner">
+        <section id="sights" class="row text-banner">
             <h1>VISIT THE ROCK MOUNTAINS</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
         </section>
-        <section class="row">
+        <section id="sports" class="row">
             <div class="fill-screen fixed-attachment" style="background-image: url(images/elk.jpg)">
             </div>
         </section>
@@ -101,6 +111,8 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/classie.js"></script>
     <script src="scripts/cdpAnimatedHeader.js"></script>
+    <script src="scripts/jquery.easing.1.3.js"></script>
+    <script src="scripts/jquery.stellar.js"></script>
     <script src="scripts/scrolling.js"></script>
    
 
