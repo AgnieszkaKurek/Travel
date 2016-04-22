@@ -47,6 +47,9 @@
 .fixed-attachment {
     background-attachment: fixed;
 }
+@media (max-width:1024px) {
+     background-attachment: scroll;
+}
 
  footer {
     background-color: #333;
