@@ -13,7 +13,7 @@
   color: #bbb;
 }
 
-@media (max-width:400px) {
+/*@media (max-width:400px) {
     .navbar-header {
         position: relative;
     }
@@ -25,18 +25,21 @@
         width: 70%;
         
     }
-}
+}*/
 
 .cbp-af-header-shrink {
     padding-top: 5px;
     padding-bottom: 5px;
     opacity: 0.9;
 }
-.img-responsive {
-    display: inline;
+/*.img-responsive {
     margin: 40px auto;
     border: 3px solid #000085;
     box-shadow: rgba(0,0,0,0.5) 10px 10px 60px;
+}*/
+.fill-screen {
+    background-size: cover;
+    background-position: center;
 }
 
  footer {

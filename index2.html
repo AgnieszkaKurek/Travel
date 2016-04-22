@@ -43,7 +43,8 @@
     
     <div class="container-fluid">
         <div class="row" style="">
-            <img class="img-responsive " src="images/lake.jpg" >
+           <div class="fill-screen" style="background-image:url(/images/lake.jpg)">
+           </div>
         </div>
     </div>
 
@@ -57,6 +58,13 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/classie.js"></script>
     <script src="scripts/cbpAnimatedHeader.js"></script>
+    <script>
+        $(function () {
+            $(window).on ("load resize", function (){
+                $(.fill).css("height",window.innerHeight);
+            });
+        });
+    </script>
 
 </body>
     
